@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func testGenericPublish[Datatype D](t *testing.T, expectedValue Datatype) {
+func testGenericPublish[Datatype comparable](t *testing.T, expectedValue Datatype) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
