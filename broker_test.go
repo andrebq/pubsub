@@ -48,4 +48,5 @@ func testGenericPublish[Datatype D](t *testing.T, expectedValue Datatype) {
 func TestBroker(t *testing.T) {
 	testGenericPublish(t, int(1))
 	testGenericPublish(t, float64(1.0))
+	testGenericPublish(t, string("a"))
 }
