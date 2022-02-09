@@ -9,7 +9,7 @@ import (
 type (
 	// D represents the 'D'ata that can be sent over a PubSub channel.
 	D interface {
-		int | float64
+		int | float64 | string
 	}
 
 	// Broker implements the main pubsub logic
